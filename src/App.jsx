@@ -6,6 +6,8 @@ import Home from "./page/Home.jsx";
 import About from "./page/About.jsx";
 import Contact from "./page/Contact.jsx";
 import Testimonials from "./page/Testimonials.jsx";
+import Bookings from "./page/Booking.jsx";
+import Cart from "./page/Cart.jsx";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/booking" element={<Bookings />} />
         </Routes>
       </div>
     </>

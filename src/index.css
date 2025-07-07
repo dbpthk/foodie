@@ -4,3 +4,7 @@
   text-decoration: underline;
   transition-delay: 500;
 }
+.active {
+  background-color: black;
+  color: white;
+}

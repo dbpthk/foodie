@@ -7,6 +7,8 @@ import logo from "./Logo.svg";
 import avtar from "./me.jpg";
 import pick_meals_image from "./pick-meals-image.png";
 import cart from "./cart.png";
+import mobile_menu from "./mobile-menu.png";
+import close_icon from "./close-icon.png";
 
 export const assets = {
   about_background_image,
@@ -18,6 +20,8 @@ export const assets = {
   avtar,
   pick_meals_image,
   cart,
+  mobile_menu,
+  close_icon,
 };
 
 export const navbarList = ["Home", "About", "Testimonials", "Contact"];
