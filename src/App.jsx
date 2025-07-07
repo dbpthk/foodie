@@ -1,6 +1,11 @@
 import "./index.css";
 import Navbar from "./componets/Navbar";
 import { assets } from "./assets/assets";
+import { Routes, Route } from "react-router-dom";
+import Home from "./page/Home.jsx";
+import About from "./page/About.jsx";
+import Contact from "./page/Contact.jsx";
+import Testimonials from "./page/Testimonials.jsx";
 
 function App() {
   return (
@@ -12,6 +17,12 @@ function App() {
           alt="background"
         />
         <Navbar />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </>
   );

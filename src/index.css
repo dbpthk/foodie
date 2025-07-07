@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+.hover {
+  text-decoration: underline;
+  transition-delay: 500;
+}
