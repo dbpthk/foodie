@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <MobileMenu />
-      <div className="  sticky top-0 shadow-md">
+      <div className=" sticky top-0 shadow-md bg-white">
         <div className="flex items-center justify-between  px:6 md:px-10 py-8">
           <Link to="/">
             <img
