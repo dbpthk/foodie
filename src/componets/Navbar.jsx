@@ -8,7 +8,13 @@ const Navbar = () => {
       <MobileMenu />
       <div className="  sticky top-0 shadow-md">
         <div className="flex items-center justify-between  px:6 md:px-10 py-8">
-          <img className=" h-8 pl-10 md:h-8 md:flex" src={assets.logo} alt="" />
+          <Link to="/home">
+            <img
+              className=" h-8 pl-10 md:h-8 md:flex cursor-pointer"
+              src={assets.logo}
+              alt=""
+            />
+          </Link>
           <ul className="hidden md:flex md:flex-row md:gap-8 lg:gap-12 text-base font-medium">
             {navbarList.map((nav, index) => (
               <li key={index}>

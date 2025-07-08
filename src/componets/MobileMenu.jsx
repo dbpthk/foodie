@@ -4,13 +4,18 @@ import { assets, navbarList } from "./../assets/assets";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeNav, setActiveNav] = useState("");
 
   const openMenu = () => {
     setIsOpen(true);
   };
-
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const handleNavClick = (nav) => {
+    setActiveNav(nav); // set active nav item
+    closeMenu(); // close the mobile menu
   };
 
   return (
@@ -49,7 +54,9 @@ const MobileMenu = () => {
                   to={`/${
                     nav.toLowerCase() === "home" ? "" : nav.toLowerCase()
                   }`}
-                  onClick={closeMenu}
+                  // passing actual nav
+                  onClick={() => handleNavClick(nav)}
+                  className={activeNav === nav ? "active" : ""}
                 >
                   {nav}
                 </Link>
@@ -60,15 +67,19 @@ const MobileMenu = () => {
           {/* Extra Buttons */}
           <Link
             to="/cart"
-            className="cursor-pointer font-medium"
-            onClick={closeMenu}
+            className={`cursor-pointer font-medium ${
+              activeNav === "Cart" ? "active" : ""
+            } `}
+            onClick={() => handleNavClick("Cart")}
           >
             Cart
           </Link>
           <Link
             to="/booking"
-            className="cursor-pointer font-medium"
-            onClick={closeMenu}
+            className={`cursor-pointer font-medium ${
+              activeNav === "Book Now" ? "active" : ""
+            } `}
+            onClick={() => handleNavClick("Book Now")}
           >
             Book Now
           </Link>
