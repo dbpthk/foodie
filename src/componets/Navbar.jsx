@@ -8,7 +8,7 @@ const Navbar = () => {
       <MobileMenu />
       <div className="  sticky top-0 shadow-md">
         <div className="flex items-center justify-between  px:6 md:px-10 py-8">
-          <Link to="/home">
+          <Link to="/">
             <img
               className=" h-8 pl-10 md:h-8 md:flex cursor-pointer"
               src={assets.logo}
@@ -19,7 +19,9 @@ const Navbar = () => {
             {navbarList.map((nav, index) => (
               <li key={index}>
                 <Link
-                  to={`/${nav.toLowerCase()}`}
+                  to={`/${
+                    nav.toLowerCase() === "home" ? "" : nav.toLowerCase()
+                  }`}
                   className="cursor-pointer hover:underline transition duration-500"
                 >
                   {nav}
