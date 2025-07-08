@@ -12,15 +12,15 @@ import Cart from "./page/Cart.jsx";
 function App() {
   return (
     <>
-      <div className="relative z-0 h-screen overflow-hidden">
+      <div className="relative h-screen overflow-hidden">
         <img
-          className="absolute -top-30 -right-70 object-cover"
+          className="absolute -z-10  -top-30 -right-70 object-cover"
           src={assets.home_banner_background}
           alt="background"
         />
         <Navbar />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />

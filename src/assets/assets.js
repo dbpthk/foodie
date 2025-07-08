@@ -9,6 +9,7 @@ import pick_meals_image from "./pick-meals-image.png";
 import cart from "./cart.png";
 import mobile_menu from "./mobile-menu.png";
 import close_icon from "./close-icon.png";
+import home_banner_image from "./home-banner-image.png";
 
 export const assets = {
   about_background_image,
@@ -16,6 +17,7 @@ export const assets = {
   choose_image,
   delivery_image,
   home_banner_background,
+  home_banner_image,
   logo,
   avtar,
   pick_meals_image,
