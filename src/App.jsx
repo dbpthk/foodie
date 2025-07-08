@@ -8,11 +8,12 @@ import Contact from "./page/Contact.jsx";
 import Testimonials from "./page/Testimonials.jsx";
 import Bookings from "./page/Booking.jsx";
 import Cart from "./page/Cart.jsx";
+import Footer from "./componets/Footer.jsx";
 
 function App() {
   return (
     <>
-      <div className="relative h-screen overflow-auto">
+      <div className="relative h-screen overflow-x-hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/booking" element={<Bookings />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );

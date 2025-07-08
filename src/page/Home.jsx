@@ -4,7 +4,7 @@ import Heading from "./../componets/Heading.jsx";
 
 const Home = () => {
   return (
-    <div className="w-full md:w-[80vw]">
+    <div className="w-full md:w-[80vw] pb-20">
       <img
         className="absolute -z-10 -top-50 -right-70 object-cover"
         src={assets.home_banner_background}

@@ -6,7 +6,7 @@ import Properties from "../componets/Properties";
 
 const About = () => {
   return (
-    <div className="max-w-full">
+    <div className="max-w-full pb-20">
       <div className="flex flex-col gap-10 md:flex-row mt-10 items-center justify-around px-12">
         <div className="sm:w-[300px] md:w-[800px] lg:w-[900px]">
           <img src={assets.about_background_image} alt="about background" />
@@ -42,7 +42,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center pb-20">
         <div className="flex flex-col lg:flex-row gap-10">
           <Properties
             image={assets.pick_meals_image}
