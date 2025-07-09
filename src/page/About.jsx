@@ -6,7 +6,7 @@ import Properties from "../componets/Properties";
 
 const About = () => {
   return (
-    <div className="max-w-full pb-20">
+    <div className="max-w-full pb-20 px-5">
       <div className="flex flex-col gap-10 md:flex-row mt-10 items-center justify-around px-12">
         <div className="sm:w-[300px] md:w-[800px] lg:w-[900px]">
           <img src={assets.about_background_image} alt="about background" />

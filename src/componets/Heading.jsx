@@ -1,9 +1,10 @@
-const Heading = ({ heading, text, buttonT, linkT, icon }) => {
+const Heading = ({ heading, subheading, text, buttonT, linkT, icon }) => {
   return (
     <div className="mb-8">
-      <h1 className="text-3xl md:text-4xl  font-sans font-medium tracking-wide leading-10 md:leading-13">
-        {heading}
-      </h1>
+      <h1 className="text-3xl md:text-4xl  font-sans font-medium">{heading}</h1>
+      {subheading && (
+        <p className="text-lg text-[#FE9E0D] font-light pt-2">{subheading}</p>
+      )}
       <p className="pt-3 text-neutral-900 mt-2">{text}</p>
       <div className=" mt-8 flex flex-row items-center gap-15">
         <div>
