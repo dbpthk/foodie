@@ -23,7 +23,7 @@ const MobileMenu = () => {
       {/* Menu Icon */}
       <div
         onClick={openMenu}
-        className={`md:hidden fixed top-6 right-10 z-50 ${isOpen && "hidden"}`}
+        className={`md:hidden fixed top-6 right-10 z-60 ${isOpen && "hidden"}`}
       >
         <img
           className="h-10 cursor-pointer"
@@ -34,7 +34,7 @@ const MobileMenu = () => {
 
       {/* Overlay menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-6 px-6 py-12">
+        <div className="fixed  inset-0 bg-white z-60 flex flex-col items-center justify-center gap-6 px-6 py-12">
           {/* Close Icon */}
           <div onClick={closeMenu} className="absolute top-6 right-10">
             <img

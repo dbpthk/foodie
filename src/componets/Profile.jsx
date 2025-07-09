@@ -84,7 +84,7 @@ const Properties = () => {
     ],
   };
   return (
-    <div className="w-3/4 m-auto ">
+    <div className="w-3/4 m-auto z-10 relative">
       <Slider {...settings}>
         {reviews.map((review, index) => (
           <div>

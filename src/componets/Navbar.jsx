@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <MobileMenu />
-      <div className="z-40 sticky top-0 shadow-md bg-white">
+      <div className="z-50 sticky top-0 shadow-md bg-white">
         <div className="flex items-center justify-between  px:6 md:px-10 py-8">
           <Link to="/">
             <img
@@ -42,7 +42,7 @@ const Navbar = () => {
           <img
             onClick={() => handleNavClick("Cart")}
             className={`hidden md:flex h-6 md:h-8 ${
-              activeNav === "Cart" ? "font-bold text-orange-500" : ""
+              activeNav === "Cart" ? "drop-shadow-[1px_1px_2px_#f97316]" : ""
             } `}
             src={assets.cart}
             alt=""

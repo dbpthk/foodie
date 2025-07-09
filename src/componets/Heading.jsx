@@ -9,7 +9,7 @@ const Heading = ({ heading, subheading, text, buttonT, linkT, icon }) => {
       <div className=" mt-8 flex flex-row items-center gap-15">
         <div>
           {buttonT && (
-            <button className=" px-5 h-12 m:h-15 bg-[#FE9E0D] rounded-full text-white text-s md:text-l hover:text-[#FE9E0D] tracking-wider hover:bg-white hover:border-2 hover:border-[#FE9E0D] cursor-pointer">
+            <button className=" px-5 h-12 m:h-15 bg-[#FE9E0D] rounded-full text-white text-s md:text-l hover:text-[#FE9E0D] md:tracking-normal md:leading-5 hover:bg-white hover:border-2 hover:border-[#FE9E0D] cursor-pointer">
               {buttonT}
             </button>
           )}
