@@ -9,6 +9,7 @@ import Testimonials from "./page/Testimonials.jsx";
 import Bookings from "./page/Booking.jsx";
 import Cart from "./page/Cart.jsx";
 import Footer from "./componets/Footer.jsx";
+import NotFound from "./componets/NotFound.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/booking" element={<Bookings />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
