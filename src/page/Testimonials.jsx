@@ -4,7 +4,7 @@ import Profile from "./../componets/Profile.jsx";
 const Testimonials = () => {
   return (
     <div className="w-full py-10">
-      <div className="flex items-center justify-center">
+      <div className="flex px-15 items-center justify-center">
         <Heading
           heading="What they are Saying"
           subheading="Real Stories. Real People."
