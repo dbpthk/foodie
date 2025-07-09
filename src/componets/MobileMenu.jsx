@@ -23,9 +23,7 @@ const MobileMenu = () => {
       {/* Menu Icon */}
       <div
         onClick={openMenu}
-        className={`md:hidden fixed top-6 right-10 z-50 ${
-          isOpen ? "hidden" : ""
-        }`}
+        className={`md:hidden fixed top-6 right-10 z-50 ${isOpen && "hidden"}`}
       >
         <img
           className="h-10 cursor-pointer"
