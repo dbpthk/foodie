@@ -1,8 +1,15 @@
 import { navbarList, assets } from "./../assets/assets";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [activeNav, setActiveNav] = useState("");
+
+  const handleNavClick = (nav) => {
+    setActiveNav(nav); // set active nav item
+  };
+
   return (
     <>
       <MobileMenu />
@@ -22,15 +29,30 @@ const Navbar = () => {
                   to={`/${
                     nav.toLowerCase() === "home" ? "" : nav.toLowerCase()
                   }`}
-                  className="cursor-pointer hover:underline transition duration-500"
+                  className={`cursor-pointer hover:underline transition duration-500 ${
+                    activeNav === nav ? "font-bold text-orange-500" : ""
+                  }`}
+                  onClick={() => handleNavClick(nav)}
                 >
                   {nav}
                 </Link>
               </li>
             ))}
           </ul>
-          <img className="hidden md:flex h-6 md:h-8" src={assets.cart} alt="" />
-          <div className="hidden md:flex items-center h-12 rounded-full cursor-pointer px-4 bg-white hover:text-[#fe850d]">
+          <img
+            onClick={() => handleNavClick("Cart")}
+            className={`hidden md:flex h-6 md:h-8 ${
+              activeNav === "Cart" ? "font-bold text-orange-500" : ""
+            } `}
+            src={assets.cart}
+            alt=""
+          />
+          <div
+            onClick={() => handleNavClick("Book Now")}
+            className={`hidden md:flex items-center h-12 rounded-full cursor-pointer px-4 bg-white hover:text-[#fe850d] ${
+              activeNav === "Book Now" ? "font-bold text-orange-500" : ""
+            } `}
+          >
             Booking Now
           </div>
         </div>
