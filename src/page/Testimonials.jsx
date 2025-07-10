@@ -1,5 +1,6 @@
 import Heading from "../componets/Heading";
 import Profile from "./../componets/Profile.jsx";
+import Subscribe from "../componets/Subscribe.jsx";
 
 const Testimonials = () => {
   return (
@@ -8,13 +9,15 @@ const Testimonials = () => {
         <Heading
           heading="What they are Saying"
           subheading="Real Stories. Real People."
-          text="Here is what our happy customers have to say about their
-              experience with us."
+          text="Here is what our happy customers have to say about their experience with us."
         />
       </div>
 
       <div className="h-[500px]">
         <Profile />
+      </div>
+      <div>
+        <Subscribe />
       </div>
     </div>
   );
