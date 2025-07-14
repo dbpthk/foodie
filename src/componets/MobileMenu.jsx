@@ -72,15 +72,6 @@ const MobileMenu = () => {
           >
             Cart
           </Link>
-          <Link
-            to="/booking"
-            className={`cursor-pointer font-medium ${
-              activeNav === "Book Now" ? "active" : ""
-            } `}
-            onClick={() => handleNavClick("Book Now")}
-          >
-            Book Now
-          </Link>
         </div>
       )}
     </>

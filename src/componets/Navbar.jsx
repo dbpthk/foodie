@@ -47,14 +47,6 @@ const Navbar = () => {
             src={assets.cart}
             alt=""
           />
-          {/* <div
-            onClick={() => handleNavClick("Book Now")}
-            className={`hidden md:flex items-center h-12 rounded-full cursor-pointer px-4 bg-white hover:text-[#fe850d] ${
-              activeNav === "Book Now" ? "font-bold text-orange-500" : ""
-            } `}
-          >
-            Booking Now
-          </div> */}
         </div>
       </div>
     </>
