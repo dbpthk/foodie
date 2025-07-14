@@ -39,14 +39,19 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <img
-            onClick={() => handleNavClick("Cart")}
-            className={`hidden md:flex h-6 md:h-8 cursor-pointer ${
-              activeNav === "Cart" ? "drop-shadow-[1px_1px_2px_#f97316]" : ""
-            } `}
-            src={assets.cart}
-            alt=""
-          />
+          <Link to={"/cart"}>
+            <img
+              onClick={() => handleNavClick("Cart")}
+              className={`hidden md:relative md:flex h-6 md:h-8 cursor-pointer ${
+                activeNav === "Cart" ? "ba" : ""
+              } `}
+              src={assets.cart}
+              alt=""
+            />
+            <span className="absolute top-6 right-6 bg-red-500 text-white text-xs px-1 rounded-full">
+              3
+            </span>
+          </Link>
         </div>
       </div>
     </>
