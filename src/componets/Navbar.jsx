@@ -41,20 +41,20 @@ const Navbar = () => {
           </ul>
           <img
             onClick={() => handleNavClick("Cart")}
-            className={`hidden md:flex h-6 md:h-8 ${
+            className={`hidden md:flex h-6 md:h-8 cursor-pointer ${
               activeNav === "Cart" ? "drop-shadow-[1px_1px_2px_#f97316]" : ""
             } `}
             src={assets.cart}
             alt=""
           />
-          <div
+          {/* <div
             onClick={() => handleNavClick("Book Now")}
             className={`hidden md:flex items-center h-12 rounded-full cursor-pointer px-4 bg-white hover:text-[#fe850d] ${
               activeNav === "Book Now" ? "font-bold text-orange-500" : ""
             } `}
           >
             Booking Now
-          </div>
+          </div> */}
         </div>
       </div>
     </>
